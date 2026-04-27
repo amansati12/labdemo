@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Suvidha Sonography & X Ray</title>
+  <meta name="description" content="Contact Suvidha Sonography & X Ray for appointments, directions and enquiries. Call, WhatsApp or fill our contact form." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><i class="fas fa-x-ray"></i><span>Suvidha <strong>Sonography & X Ray</strong></span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="tel:+91XXXXXXXXXX" class="btn-nav">📞 Call Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We're here to help — reach out anytime</p>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container contact-grid">
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Book an appointment, ask a question or just find us on the map. We're always happy to help.</p>
+
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Address</h4>
+            <p>[Street Address], [Landmark],<br>[City], [State] – [PIN Code]</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Monday – Saturday: 8:00 AM – 8:00 PM<br>Sunday: 9:00 AM – 2:00 PM</p>
+          </div>
+        </div>
+
+        <div class="contact-action-btns">
+          <a href="tel:+91XXXXXXXXXX" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+          <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>Obstetric Sonography</option>
+              <option>Color Doppler</option>
+              <option>Digital X-Ray</option>
+              <option>Abdominal Sonography</option>
+              <option>Gynaecological Sonography</option>
+              <option>Musculoskeletal USG</option>
+              <option>Thyroid Sonography</option>
+              <option>Small Parts Sonography</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any specific questions or preferred appointment time..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <i class="fas fa-check-circle"></i> Thank you! We'll contact you shortly to confirm your appointment.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <div class="container">
+      <h2 class="map-title">Find Us on the Map</h2>
+      <!-- Replace the src below with your actual Google Maps embed URL -->
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEzLjQiTiA3M8KwNTEnMjQuMSJF!5e0!3m2!1sen!2sin!4v1234567890"
+          width="100%"
+          height="420"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Suvidha Sonography & X Ray Location">
+        </iframe>
+      </div>
+      <p class="map-note"><i class="fas fa-info-circle"></i> Replace the map embed URL with your actual Google Maps embed link from Google Maps → Share → Embed a map.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Walk-ins Welcome</h2>
+        <p>No appointment needed for most services. Just walk in during working hours.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="tel:+91XXXXXXXXXX" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fas fa-x-ray"></i> Suvidha Sonography & X Ray</a>
+        <p>Trusted diagnostic imaging centre providing accurate, affordable and compassionate care.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p><i class="fas fa-map-marker-alt"></i> [Street Address], [City], [State]</p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+        <p><i class="fas fa-clock"></i> Mon–Sat: 8:00 AM – 8:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Suvidha Sonography & X Ray. All rights reserved.</p></div>
+  </footer>
+
+  <a href="tel:+91XXXXXXXXXX" class="sticky-call" aria-label="Call Now"><i class="fas fa-phone"></i></a>
+  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <script src="js/main.js"></script>
+</body>
+</html>
